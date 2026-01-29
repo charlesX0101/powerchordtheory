@@ -22,13 +22,17 @@ body.guide-page {
   box-sizing: border-box;
 }
 
-/* Force visual placement on desktop */
+/* =========================================================
+   ORDER CONTROL (CRITICAL FIX)
+   ========================================================= */
+
+/* Desktop order */
 .guide-page .guide-sidebar {
-  grid-column: 1;
+  order: 1;
 }
 
 .guide-page .guide-article {
-  grid-column: 2;
+  order: 2;
 }
 
 /* =========================================================
@@ -116,7 +120,7 @@ body.guide-page {
 }
 
 /* =========================================================
-   SECTION BOXES (RESTORED + SAFE)
+   SECTION BOXES
    ========================================================= */
 .guide-page .section-box {
   background: #1f1f1f;
@@ -209,20 +213,19 @@ body.guide-page {
     padding: 0 1.5rem;
   }
 
-  /* Natural DOM order takes over:
-     article first, sidebar second */
-  .guide-page .guide-sidebar,
+  /* Flip order ONLY on mobile */
   .guide-page .guide-article {
-    grid-column: auto;
+    order: 1;
+  }
+
+  .guide-page .guide-sidebar {
+    order: 2;
+    position: static;
+    margin-top: 3rem;
   }
 
   .guide-page .video-row {
     grid-template-columns: 1fr;
-  }
-
-  .guide-page .guide-sidebar {
-    position: static;
-    margin-top: 2rem;
   }
 }
 
