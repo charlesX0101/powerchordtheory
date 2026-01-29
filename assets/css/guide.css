@@ -1,4 +1,6 @@
-/* === Guide Page Core === */
+/* =========================================================
+   GUIDE PAGE CORE
+   ========================================================= */
 body.guide-page {
   margin: 0;
   padding: 0;
@@ -7,7 +9,9 @@ body.guide-page {
   font-family: 'Oswald', sans-serif;
 }
 
-/* === Guide Layout === */
+/* =========================================================
+   GUIDE LAYOUT
+   ========================================================= */
 .guide-page .guide-layout {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -18,13 +22,15 @@ body.guide-page {
   box-sizing: border-box;
 }
 
-/* === Sidebar === */
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
 .guide-page .guide-sidebar {
   background: #1a1a1a;
   padding: 1.5rem;
   border-radius: 6px;
   position: sticky;
-  top: 120px;
+  top: 120px; /* aligns with fixed header */
 }
 
 .guide-page .sidebar-section-title {
@@ -47,7 +53,6 @@ body.guide-page {
 }
 
 .guide-page .sidebar-guides-list a {
-  text-decoration: none;
   color: #ccc;
   font-size: 1rem;
 }
@@ -56,9 +61,9 @@ body.guide-page {
   color: #0ff;
 }
 
-/* === NEW: Section Headers in Sidebar === */
+/* Section headers inside sidebar */
 .guide-page .sidebar-section-header {
-  font-weight: bold;
+  font-weight: 700;
   color: #0ff;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
@@ -66,7 +71,9 @@ body.guide-page {
   font-size: 0.95rem;
 }
 
-/* === Next Guide === */
+/* =========================================================
+   NEXT GUIDE
+   ========================================================= */
 .guide-page .sidebar-next {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -76,20 +83,21 @@ body.guide-page {
 .guide-page .sidebar-next a {
   font-weight: 700;
   color: #0ff;
-  text-decoration: none;
 }
 
 .guide-page .sidebar-next a:hover {
   text-decoration: underline;
 }
 
-/* === Article === */
+/* =========================================================
+   ARTICLE AREA
+   ========================================================= */
 .guide-page .guide-article {
   width: 100%;
   padding-bottom: 3rem;
 }
 
-/* article title */
+/* Article title */
 .guide-page .guide-article h1 {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 2.8rem;
@@ -98,17 +106,18 @@ body.guide-page {
   line-height: 1.2;
 }
 
-/* === SECTION BOXES === */
+/* =========================================================
+   SECTION BOXES (CRITICAL – RESTORED)
+   ========================================================= */
 .guide-page .section-box {
   background: #1f1f1f;
   padding: 2rem;
   border-radius: 6px;
   margin-bottom: 2rem;
 
-  display: block !important;
-  overflow: visible !important;
-  white-space: normal !important;
-  text-overflow: clip !important;
+  /* explicit containment */
+  display: block;
+  max-width: 100%;
 }
 
 .guide-page .section-box h2 {
@@ -117,7 +126,9 @@ body.guide-page {
   margin-bottom: 1rem;
 }
 
-/* === VIDEO GRID === */
+/* =========================================================
+   VIDEO GRID
+   ========================================================= */
 .guide-page .video-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -133,7 +144,9 @@ body.guide-page {
   border-radius: 6px;
 }
 
-/* === INFO BOXES === */
+/* =========================================================
+   INFO BOXES
+   ========================================================= */
 .guide-page .info-box {
   background: #2a2a2a;
   padding: 1.5rem 1.75rem;
@@ -141,10 +154,8 @@ body.guide-page {
   border-radius: 4px;
   margin-bottom: 2rem;
 
-  display: block !important;
-  overflow: visible !important;
-  white-space: normal !important;
-  text-overflow: clip !important;
+  display: block;
+  max-width: 100%;
 }
 
 .guide-page .info-box h3 {
@@ -153,7 +164,9 @@ body.guide-page {
   margin-bottom: 1rem;
 }
 
-/* === Lists Inside Guides === */
+/* =========================================================
+   LISTS INSIDE GUIDES
+   ========================================================= */
 .guide-page .guide-article ul,
 .guide-page .guide-article ol {
   padding-left: 1.5rem;
@@ -165,7 +178,9 @@ body.guide-page {
   margin-bottom: 0.5rem;
 }
 
-/* === Footer On Guides === */
+/* =========================================================
+   GUIDE FOOTER
+   ========================================================= */
 .guide-page .site-footer {
   background: #000;
   color: #888;
@@ -179,15 +194,19 @@ body.guide-page {
   white-space: nowrap;
 }
 
-/* === Responsive Behavior === */
+/* =========================================================
+   RESPONSIVE BEHAVIOR
+   ========================================================= */
 @media (max-width: 1024px) {
   .guide-page .guide-layout {
     grid-template-columns: 1fr;
     padding: 0 1.5rem;
   }
+
   .guide-page .video-row {
     grid-template-columns: 1fr;
   }
+
   .guide-page .guide-sidebar {
     position: static;
     margin-bottom: 2rem;

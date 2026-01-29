@@ -55,17 +55,29 @@ a {
   display: flex;
   align-items: center;
 }
+
 .header-inner {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  /* This is the key: logo left, cluster right */
+  justify-content: flex-start;
   padding: 0 1rem;
+  gap: 0.9rem;
+}
+
+/* Disable the inline spacer div in your header markup */
+.header-inner > div[style*="flex-grow"] {
+  display: none !important;
 }
 
 /* === Logo === */
+.banner-logo {
+  flex: 0 0 auto;
+  margin-right: auto; /* pushes everything else to the right */
+}
 .banner-logo img {
   height: 110px;
   display: block;
@@ -73,13 +85,37 @@ a {
   z-index: 6;
 }
 
-/* === Search Bar === */
-.search-bar {
-  flex: 1;
-  max-width: 300px;
-  margin-left: 2rem;
+/* === Top Nav Icons (HEADER ONLY) === */
+.header-strip .nav-icons {
+  display: flex;
+  gap: 0.75rem;
+  z-index: 6;
+  flex: 0 0 auto;
+  order: 2;
 }
-.search-bar input[type="text"] {
+
+.header-strip .nav-icons a img {
+  height: 44px;
+  width: auto;
+  max-height: 44px;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.header-strip .nav-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* === Search Bar (support both .search-bar and .site-search) === */
+.search-bar,
+.site-search {
+  flex: 0 0 300px;
+  max-width: 300px;
+  order: 3;
+}
+
+.search-bar input[type="text"],
+.site-search input[type="text"] {
   width: 100%;
   padding: 0.5rem 0.75rem;
   border: none;
@@ -88,24 +124,11 @@ a {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
+  box-sizing: border-box;
 }
-.search-bar input[type="text"]::placeholder {
+.search-bar input[type="text"]::placeholder,
+.site-search input[type="text"]::placeholder {
   color: #666;
-}
-
-/* === Top Nav Icons === */
-.nav-icons {
-  display: flex;
-  gap: 0.75rem;
-  z-index: 6;
-}
-.nav-icons a img {
-  height: 44px;
-  display: block;
-  transition: transform 0.2s ease;
-}
-.nav-icons a img:hover {
-  transform: scale(1.2);
 }
 
 /* === Main Content === */
@@ -115,7 +138,7 @@ a {
   padding: 0 1rem;
   position: relative;
   z-index: 3;
-  min-height: calc(100vh - 200px); /* Ensures footer doesn't jump up */
+  min-height: calc(100vh - 200px);
 }
 
 /* === Intro Block === */
@@ -152,7 +175,7 @@ a {
   margin-bottom: 6rem;
 }
 
-/* === Mid Page Icons === */
+/* === Mid Page Icons (do NOT affect these) === */
 .mid-icons {
   display: flex;
   justify-content: center;
@@ -271,8 +294,21 @@ a {
     height: 80px;
   }
 
-  .nav-icons a img {
+  /* Center icons on mobile (best of both worlds) */
+  .header-inner {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  /* Keep logo present but don’t force the right cluster on mobile */
+  .banner-logo {
+    margin-right: 0;
+  }
+
+  /* icons smaller on mobile */
+  .header-strip .nav-icons a img {
     height: 36px;
+    max-height: 36px;
   }
 
   .mid-icons img {
@@ -287,7 +323,9 @@ a {
     display: none;
   }
 
-  .search-bar {
+  /* hide search on mobile like you had */
+  .search-bar,
+  .site-search {
     display: none;
   }
 

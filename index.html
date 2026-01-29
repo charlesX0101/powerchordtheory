@@ -7,7 +7,6 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Fira+Sans+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Main site styles -->
@@ -39,42 +38,21 @@
         </a>
       </div>
 
-      <!-- Top Navigation -->
-      <nav class="top-nav" aria-label="Primary Navigation">
-
-        <!-- Icons FIRST (mobile-friendly) -->
-        <div class="nav-left">
-          
-
-          <a href="/gear-guide/" class="nav-icon" aria-label="Gear Guide">
-            <img src="/assets/images/gear.png" alt="Gear Guide" />
-          </a>
-
-          <a href="/learn/" class="nav-icon" aria-label="Learn">
-            <img src="/assets/images/learn.png" alt="Learn" />
-          </a>
-
-          <a href="/one-on-one/" class="nav-icon" aria-label="One-on-One">
-            <img src="/assets/images/1on1.png" alt="One-on-One" />
-          </a>
-
-          <a href="/about/" class="nav-icon" aria-label="About">
-            <img src="/assets/images/about.png" alt="About" />
-          </a>
-
-          <a href="/contact/" class="nav-icon" aria-label="Contact">
-            <img src="/assets/images/contact.png" alt="Contact" />
-          </a>
-        </div>
-
-        <!-- Search SECOND -->
-        <div class="nav-right">
-          <form class="site-search" role="search">
-            <input type="text" id="search-input" placeholder="Search..." />
-          </form>
-        </div>
-
+      <!-- Nav Icons (MOVED BEFORE SEARCH) -->
+      <nav class="nav-icons" aria-label="Primary Navigation">
+        
+        <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
+        <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
+        <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
+        <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
+        <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
       </nav>
+
+      <!-- Search Bar (FLEX SPACER) -->
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search..." />
+      </div>
+
     </div>
   </header>
 
