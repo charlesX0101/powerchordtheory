@@ -1,0 +1,379 @@
+/* === Global Reset === */
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === LEFT Side Image === */
+.side-image.left {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  width: 240px;
+  height: calc(100vh + 20px);
+  z-index: 10;
+  pointer-events: none;
+}
+.side-image.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* === RIGHT Side Image === */
+.side-image.right {
+  position: fixed;
+  top: -20px;
+  right: 0;
+  width: 240px;
+  height: calc(100vh + 20px);
+  z-index: 10;
+  pointer-events: none;
+}
+.side-image.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* === Header Strip === */
+.header-strip {
+  background: #1a1a1a;
+  height: 110px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+.header-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* === Logo === */
+.banner-logo img {
+  height: 110px;
+  display: block;
+  position: relative;
+  z-index: 6;
+}
+
+/* === Search Bar === */
+.search-bar {
+  flex: 1;
+  max-width: 300px;
+  margin-left: 2rem;
+}
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+}
+.search-bar input[type="text"]::placeholder {
+  color: #666;
+}
+
+/* === Top Nav Icons === */
+.nav-icons {
+  display: flex;
+  gap: 0.75rem;
+  z-index: 6;
+}
+.nav-icons a img {
+  height: 44px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+.nav-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* === Main Content === */
+.site-main {
+  max-width: 980px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 3;
+  min-height: calc(100vh - 200px); /* Ensures footer doesn't jump up */
+}
+
+/* === Intro Block === */
+.intro-block {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.intro-block h1 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  max-width: 900px;
+}
+
+.intro-block p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #ccc;
+  max-width: 860px;
+  line-height: 1.65;
+}
+
+/* === Optional Section Wrapper for Boxed About Page === */
+.section-wrapper {
+  background: #111;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+/* === Mid Page Icons === */
+.mid-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 7rem 0;
+}
+.mid-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mid-icons img {
+  height: 100px;
+  transition: transform 0.2s ease;
+}
+.mid-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* === Core Sections === */
+.core-sections {
+  margin: 10rem 0 6rem;
+}
+.core-sections h2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+.core-box {
+  background: #111;
+  padding: 1.75rem;
+  border-radius: 8px;
+}
+.core-box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.core-box p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* === Footer === */
+.site-footer {
+  background: #000;
+  color: #888;
+  font-size: 0.85rem;
+  padding: 1.25rem 1rem;
+  margin-top: 9rem;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  white-space: nowrap;
+}
+.site-footer span,
+.site-footer .footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer-links a {
+  color: #aaa;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* === TOC List Box (optional if needed elsewhere) === */
+.toc-list {
+  background: #333;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  line-height: 1.7;
+}
+.toc-list a {
+  color: #0ff;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1024px) {
+  .core-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .banner-logo img {
+    height: 80px;
+  }
+
+  .header-strip {
+    height: 80px;
+  }
+
+  .nav-icons a img {
+    height: 36px;
+  }
+
+  .mid-icons img {
+    height: 70px;
+  }
+
+  .core-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+/* === Layout Specific Styling === */
+.page-index {
+  background: #111;
+  padding: 4rem 3rem 5rem;
+  margin: 4rem auto;
+  max-width: 1000px;
+  color: #eee;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 8px;
+}
+
+.page-index h1 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.page-index .toc-list {
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.page-index .toc-list a {
+  display: block;
+  color: #0ff;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 0.75rem;
+}
+
+.page-index .callout {
+  background: #333;
+  padding: 2rem;
+  border-left: 5px solid #ffdd00;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+.page-index .callout h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-index .callout p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* === Section Box for Main Layout Pages === */
+.section-box {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  color: #eee;
+}
+
+.section-box h2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.85rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
