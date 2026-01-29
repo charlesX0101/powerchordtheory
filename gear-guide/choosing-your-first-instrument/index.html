@@ -19,112 +19,45 @@
 <body class="guide-page">
 
   <!-- Header -->
-  <div class="header-strip">
+  <header class="header-strip">
     <div class="header-inner">
+
       <div class="banner-logo">
         <a href="/"><img src="/assets/images/logo.png" alt="PowerChordTheory" /></a>
       </div>
+
+      <nav class="nav-icons" aria-label="Primary Navigation">
+        
+          <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
+        
+        
+          <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
+        
+        
+          <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
+        
+        
+          <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
+        
+        
+          <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
+        
+        
+          <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
+        
+      </nav>
 
       <div class="search-bar">
         <input type="text" id="search-input" placeholder="Search..." />
       </div>
 
-      <nav class="nav-icons">
-        <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
-        <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
-        <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
-        <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
-        <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
-        <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
-      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- Main -->
+  <!-- Main Guide Layout -->
   <main class="guide-layout">
-    <aside class="guide-sidebar">
-      
-      
-        <h2 class="sidebar-section-title">Guide Index</h2>
-        
-        <ul class="sidebar-guides-list">
-          
-            
-              <li><a href="/gear-guide/comfort-and-fit/"></a></li>
-            
-          
-            
-              <li><a href="/gear-guide/">Gear Guide</a></li>
-            
-          
-            
-              <li class="active">Choosing Your First Instrument</li>
-            
-          
-            
-              <li><a href="/gear-guide/bass-buying-basics/">Bass Buying Basics</a></li>
-            
-          
-            
-              <li><a href="/gear-guide/guitar-buying-basics/">Guitar Buying Basics</a></li>
-            
-          
-            
-              <li><a href="/gear-guide/budget-guidance/">Budget Guidance</a></li>
-            
-          
-            
-              <li><a href="/gear-guide/amps-headphones-and-interfaces/">Amps, Headphones, and Interfaces</a></li>
-            
-          
-            
-              <li><a href="/gear-guide/accessories-you-actually-need/">Accessories You Actually Need</a></li>
-            
-          
-            
-              <li><a href="/gear-guide/buying-used/">Buying Used</a></li>
-            
-          
-        </ul>
-        
-        
-          
-        
-          
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          <div class="sidebar-next">
-            <h3>Next Guide</h3>
-            <a href="/gear-guide/bass-buying-basics/">
-              Bass Buying Basics
-            </a>
-          </div>
-        
-      
 
-      
-
-      <div class="sidebar-section-toc" style="margin-top: 1.5rem;">
-        <button onclick="sharePage()" style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;">Share This Page</button>
-      </div>
-    </aside>
-
+    <!-- ARTICLE FIRST (this fixes mobile order) -->
     <article class="guide-article">
       <h1>Choosing Your First Instrument</h1>
       <div class="section-box">
@@ -234,6 +167,97 @@
 </div>
 
     </article>
+
+    <!-- SIDEBAR / TOC SECOND -->
+    <aside class="guide-sidebar">
+
+      
+
+      
+        <h2 class="sidebar-section-title">Guide Index</h2>
+
+        
+        <ul class="sidebar-guides-list">
+          
+            
+              <li><a href="/gear-guide/comfort-and-fit/"></a></li>
+            
+          
+            
+              <li><a href="/gear-guide/">Gear Guide</a></li>
+            
+          
+            
+              <li class="active">Choosing Your First Instrument</li>
+            
+          
+            
+              <li><a href="/gear-guide/bass-buying-basics/">Bass Buying Basics</a></li>
+            
+          
+            
+              <li><a href="/gear-guide/guitar-buying-basics/">Guitar Buying Basics</a></li>
+            
+          
+            
+              <li><a href="/gear-guide/budget-guidance/">Budget Guidance</a></li>
+            
+          
+            
+              <li><a href="/gear-guide/amps-headphones-and-interfaces/">Amps, Headphones, and Interfaces</a></li>
+            
+          
+            
+              <li><a href="/gear-guide/accessories-you-actually-need/">Accessories You Actually Need</a></li>
+            
+          
+            
+              <li><a href="/gear-guide/buying-used/">Buying Used</a></li>
+            
+          
+        </ul>
+
+        
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          <div class="sidebar-next">
+            <h3>Next Guide</h3>
+            <a href="/gear-guide/bass-buying-basics/">
+              Bass Buying Basics
+            </a>
+          </div>
+        
+      
+
+      
+
+      <div class="sidebar-section-toc" style="margin-top:1.5rem;">
+        <button onclick="sharePage()" style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;">
+          Share This Page
+        </button>
+      </div>
+
+    </aside>
   </main>
 
   <footer class="site-footer">

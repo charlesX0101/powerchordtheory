@@ -19,34 +19,160 @@
 <body class="guide-page">
 
   <!-- Header -->
-  <div class="header-strip">
+  <header class="header-strip">
     <div class="header-inner">
+
       <div class="banner-logo">
         <a href="/"><img src="/assets/images/logo.png" alt="PowerChordTheory" /></a>
       </div>
+
+      <nav class="nav-icons" aria-label="Primary Navigation">
+        
+          <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
+        
+        
+          <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
+        
+        
+          <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
+        
+        
+          <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
+        
+        
+          <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
+        
+        
+          <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
+        
+      </nav>
 
       <div class="search-bar">
         <input type="text" id="search-input" placeholder="Search..." />
       </div>
 
-      <nav class="nav-icons">
-        <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
-        <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
-        <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
-        <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
-        <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
-        <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
-      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- Main -->
+  <!-- Main Guide Layout -->
   <main class="guide-layout">
+
+    <!-- ARTICLE FIRST (this fixes mobile order) -->
+    <article class="guide-article">
+      <h1>Learning Songs Efficiently</h1>
+      <div class="section-box">
+<h2 id="summary">Summary</h2>
+<p>
+This guide focuses on practical strategies for learning songs efficiently.
+The emphasis is on understanding structure, identifying essential musical
+information, and developing habits that reduce guesswork and wasted repetition.
+Learning songs efficiently supports faster preparation, better retention, and
+more confident playing with others.
+</p>
+</div>
+<div class="section-box">
+<h2 id="primary-videos">Videos</h2>
+<div class="video-row">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZhxfiNdqDFA" frameborder="0" allowfullscreen></iframe>
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/6tN84YQdrpY" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="section-box">
+<h2 id="start-with-the-big-picture">Start With the Big Picture</h2>
+<p>
+Before focusing on details, it is important to understand the overall shape of
+the song. This includes identifying sections such as intro, verse, chorus,
+bridge, and outro, along with how many times each section repeats.
+</p>
+<p>
+Knowing the form early prevents getting lost and reduces the need to relearn
+material later. It also helps prioritize what information matters most.
+</p>
+</div>
+<div class="section-box">
+<h2 id="identify-essential-parts">Identify Essential Parts</h2>
+<p>
+Not every note carries equal importance. Many songs rely on a small number of
+core parts that define the feel and function of the instrument in the arrangement.
+</p>
+<p>
+For bass and guitar, this often includes main riffs, groove patterns, chord
+movement, and section transitions. Learning these first creates a usable
+foundation quickly.
+</p>
+</div>
+<div class="section-box">
+<h2 id="work-in-sections">Work in Sections</h2>
+<p>
+Breaking a song into sections allows focused repetition without overload.
+Learning one section at a time improves accuracy and makes problem areas easier
+to isolate.
+</p>
+<p>
+Once sections are stable, they can be connected into longer phrases and full
+playthroughs.
+</p>
+</div>
+<div class="section-box">
+<h2 id="use-listening-as-a-tool">Use Listening as a Tool</h2>
+<p>
+Active listening is as important as physical practice. Repeated listening helps
+reinforce form, feel, and phrasing even away from the instrument.
+</p>
+<p>
+Being able to hear where sections change and how parts interact makes learning
+faster once the instrument is in hand.
+</p>
+</div>
+<div class="section-box">
+<h2 id="repeat-with-intent">Repeat With Intent</h2>
+<p>
+Repetition is most effective when it is intentional. Each pass should focus on a
+specific goal such as timing, note clarity, transitions, or consistency.
+</p>
+<p>
+Mindless looping often reinforces mistakes. Intentional repetition builds control
+and confidence.
+</p>
+</div>
+<div class="info-box">
+<h3 id="keywords">Keywords</h3>
+<ul>
+<li>song learning</li>
+<li>practice strategy</li>
+<li>listening skills</li>
+<li>song structure</li>
+<li>repetition</li>
+</ul>
+</div>
+<div class="info-box">
+<h3 id="related-topics">Related Topics</h3>
+<ul>
+<li>Playing With Other Musicians</li>
+<li>Following Form and Structure</li>
+<li>Musical Decision Making in Real Time</li>
+</ul>
+</div>
+<div class="info-box">
+<h3 id="one-on-one">One-on-One</h3>
+<p>
+Individual instruction can help refine learning workflows, identify weak spots,
+and adapt song preparation strategies to specific musical goals and situations.
+</p>
+</div>
+
+    </article>
+
+    <!-- SIDEBAR / TOC SECOND -->
     <aside class="guide-sidebar">
+
       
+
       
         <h2 class="sidebar-section-title">Learn</h2>
+
         
+
         
           <ul class="sidebar-guides-list">
             
@@ -821,6 +947,7 @@
             
           </ul>
         
+
         
         
         
@@ -910,119 +1037,18 @@
             </a>
           </div>
         
-      
 
       
 
-      <div class="sidebar-section-toc" style="margin-top: 1.5rem;">
-        <button onclick="sharePage()" style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;">Share This Page</button>
+      
+
+      <div class="sidebar-section-toc" style="margin-top:1.5rem;">
+        <button onclick="sharePage()" style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;">
+          Share This Page
+        </button>
       </div>
+
     </aside>
-
-    <article class="guide-article">
-      <h1>Learning Songs Efficiently</h1>
-      <div class="section-box">
-<h2 id="summary">Summary</h2>
-<p>
-This guide focuses on practical strategies for learning songs efficiently.
-The emphasis is on understanding structure, identifying essential musical
-information, and developing habits that reduce guesswork and wasted repetition.
-Learning songs efficiently supports faster preparation, better retention, and
-more confident playing with others.
-</p>
-</div>
-<div class="section-box">
-<h2 id="primary-videos">Videos</h2>
-<div class="video-row">
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZhxfiNdqDFA" frameborder="0" allowfullscreen></iframe>
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/6tN84YQdrpY" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="section-box">
-<h2 id="start-with-the-big-picture">Start With the Big Picture</h2>
-<p>
-Before focusing on details, it is important to understand the overall shape of
-the song. This includes identifying sections such as intro, verse, chorus,
-bridge, and outro, along with how many times each section repeats.
-</p>
-<p>
-Knowing the form early prevents getting lost and reduces the need to relearn
-material later. It also helps prioritize what information matters most.
-</p>
-</div>
-<div class="section-box">
-<h2 id="identify-essential-parts">Identify Essential Parts</h2>
-<p>
-Not every note carries equal importance. Many songs rely on a small number of
-core parts that define the feel and function of the instrument in the arrangement.
-</p>
-<p>
-For bass and guitar, this often includes main riffs, groove patterns, chord
-movement, and section transitions. Learning these first creates a usable
-foundation quickly.
-</p>
-</div>
-<div class="section-box">
-<h2 id="work-in-sections">Work in Sections</h2>
-<p>
-Breaking a song into sections allows focused repetition without overload.
-Learning one section at a time improves accuracy and makes problem areas easier
-to isolate.
-</p>
-<p>
-Once sections are stable, they can be connected into longer phrases and full
-playthroughs.
-</p>
-</div>
-<div class="section-box">
-<h2 id="use-listening-as-a-tool">Use Listening as a Tool</h2>
-<p>
-Active listening is as important as physical practice. Repeated listening helps
-reinforce form, feel, and phrasing even away from the instrument.
-</p>
-<p>
-Being able to hear where sections change and how parts interact makes learning
-faster once the instrument is in hand.
-</p>
-</div>
-<div class="section-box">
-<h2 id="repeat-with-intent">Repeat With Intent</h2>
-<p>
-Repetition is most effective when it is intentional. Each pass should focus on a
-specific goal such as timing, note clarity, transitions, or consistency.
-</p>
-<p>
-Mindless looping often reinforces mistakes. Intentional repetition builds control
-and confidence.
-</p>
-</div>
-<div class="info-box">
-<h3 id="keywords">Keywords</h3>
-<ul>
-<li>song learning</li>
-<li>practice strategy</li>
-<li>listening skills</li>
-<li>song structure</li>
-<li>repetition</li>
-</ul>
-</div>
-<div class="info-box">
-<h3 id="related-topics">Related Topics</h3>
-<ul>
-<li>Playing With Other Musicians</li>
-<li>Following Form and Structure</li>
-<li>Musical Decision Making in Real Time</li>
-</ul>
-</div>
-<div class="info-box">
-<h3 id="one-on-one">One-on-One</h3>
-<p>
-Individual instruction can help refine learning workflows, identify weak spots,
-and adapt song preparation strategies to specific musical goals and situations.
-</p>
-</div>
-
-    </article>
   </main>
 
   <footer class="site-footer">

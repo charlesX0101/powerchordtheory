@@ -22,6 +22,15 @@ body.guide-page {
   box-sizing: border-box;
 }
 
+/* Force visual placement on desktop */
+.guide-page .guide-sidebar {
+  grid-column: 1;
+}
+
+.guide-page .guide-article {
+  grid-column: 2;
+}
+
 /* =========================================================
    SIDEBAR
    ========================================================= */
@@ -30,7 +39,7 @@ body.guide-page {
   padding: 1.5rem;
   border-radius: 6px;
   position: sticky;
-  top: 120px; /* aligns with fixed header */
+  top: 120px;
 }
 
 .guide-page .sidebar-section-title {
@@ -107,15 +116,13 @@ body.guide-page {
 }
 
 /* =========================================================
-   SECTION BOXES (CRITICAL – RESTORED)
+   SECTION BOXES (RESTORED + SAFE)
    ========================================================= */
 .guide-page .section-box {
   background: #1f1f1f;
   padding: 2rem;
   border-radius: 6px;
   margin-bottom: 2rem;
-
-  /* explicit containment */
   display: block;
   max-width: 100%;
 }
@@ -153,7 +160,6 @@ body.guide-page {
   border-left: 4px solid #ffdd00;
   border-radius: 4px;
   margin-bottom: 2rem;
-
   display: block;
   max-width: 100%;
 }
@@ -195,12 +201,19 @@ body.guide-page {
 }
 
 /* =========================================================
-   RESPONSIVE BEHAVIOR
+   RESPONSIVE BEHAVIOR (MOBILE)
    ========================================================= */
 @media (max-width: 1024px) {
   .guide-page .guide-layout {
     grid-template-columns: 1fr;
     padding: 0 1.5rem;
+  }
+
+  /* Natural DOM order takes over:
+     article first, sidebar second */
+  .guide-page .guide-sidebar,
+  .guide-page .guide-article {
+    grid-column: auto;
   }
 
   .guide-page .video-row {
@@ -209,7 +222,7 @@ body.guide-page {
 
   .guide-page .guide-sidebar {
     position: static;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 
