@@ -19,33 +19,66 @@
 <body class="guide-page">
 
   <!-- Header -->
-  <div class="header-strip">
+  <header class="header-strip">
     <div class="header-inner">
+
+      <!-- Logo -->
       <div class="banner-logo">
-        <a href="/"><img src="/assets/images/logo.png" alt="PowerChordTheory" /></a>
+        <a href="/">
+          <img src="/assets/images/logo.png" alt="PowerChordTheory" />
+        </a>
       </div>
 
-      <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search..." />
-      </div>
+      <!-- Top Navigation -->
+      <nav class="top-nav" aria-label="Primary Navigation">
 
-      <nav class="nav-icons">
-        <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
-        <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
-        <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
-        <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
-        <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
-        <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
+        <!-- Icons FIRST -->
+        <div class="nav-left">
+          <a href="/" class="nav-icon" aria-label="Home">
+            <img src="/assets/images/home.png" alt="Home" />
+          </a>
+
+          <a href="/gear-guide/" class="nav-icon" aria-label="Gear Guide">
+            <img src="/assets/images/gear.png" alt="Gear Guide" />
+          </a>
+
+          <a href="/learn/" class="nav-icon" aria-label="Learn">
+            <img src="/assets/images/learn.png" alt="Learn" />
+          </a>
+
+          <a href="/one-on-one/" class="nav-icon" aria-label="One-on-One">
+            <img src="/assets/images/1on1.png" alt="One-on-One" />
+          </a>
+
+          <a href="/about/" class="nav-icon" aria-label="About">
+            <img src="/assets/images/about.png" alt="About" />
+          </a>
+
+          <a href="/contact/" class="nav-icon" aria-label="Contact">
+            <img src="/assets/images/contact.png" alt="Contact" />
+          </a>
+        </div>
+
+        <!-- Search SECOND -->
+        <div class="nav-right">
+          <form class="site-search" role="search">
+            <input type="text" id="search-input" placeholder="Search..." />
+          </form>
+        </div>
+
       </nav>
     </div>
-  </div>
+  </header>
 
   <!-- Main -->
   <main class="guide-layout">
     <aside class="guide-sidebar">
+
       
+
       
         <h2 class="sidebar-section-title">Guide Index</h2>
+
         
         <ul class="sidebar-guides-list">
           
@@ -86,6 +119,7 @@
             
           
         </ul>
+
         
         
           
@@ -108,6 +142,7 @@
         
           
         
+
         
           <div class="sidebar-next">
             <h3>Next Guide</h3>
@@ -121,7 +156,12 @@
       
 
       <div class="sidebar-section-toc" style="margin-top: 1.5rem;">
-        <button onclick="sharePage()" style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;">Share This Page</button>
+        <button
+          onclick="sharePage()"
+          style="background:#222;color:#0ff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;"
+        >
+          Share This Page
+        </button>
       </div>
     </aside>
 

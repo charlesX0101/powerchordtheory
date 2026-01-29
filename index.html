@@ -7,6 +7,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Fira+Sans+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Main site styles -->
@@ -28,72 +29,88 @@
   </div>
 
   <!-- Header -->
-  <div class="header-strip">
-    <div class="header-inner" style="display: flex; align-items: center; gap: 2rem; justify-content: space-between;">
-      
+  <header class="header-strip">
+    <div class="header-inner">
+
       <!-- Logo -->
-      <div class="banner-logo" style="flex-shrink: 0;">
+      <div class="banner-logo">
         <a href="/">
           <img src="/assets/images/logo.png" alt="PowerChordTheory" />
         </a>
       </div>
 
-      <!-- Spacer -->
-      <div style="flex-grow: 1;"></div>
+      <!-- Top Navigation -->
+      <nav class="top-nav" aria-label="Primary Navigation">
 
-      <!-- Navigation Icons -->
-      <nav class="nav-icons" style="flex-shrink: 0;">
-        <a href="/"><img src="/assets/images/home.png" alt="Home" /></a>
-        <a href="/gear-guide/"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
-        <a href="/learn/"><img src="/assets/images/learn.png" alt="Learn" /></a>
-        <a href="/one-on-one/"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
-        <a href="/about/"><img src="/assets/images/about.png" alt="About" /></a>
-        <a href="/contact/"><img src="/assets/images/contact.png" alt="Contact" /></a>
+        <!-- Icons FIRST (mobile-friendly) -->
+        <div class="nav-left">
+          
+
+          <a href="/gear-guide/" class="nav-icon" aria-label="Gear Guide">
+            <img src="/assets/images/gear.png" alt="Gear Guide" />
+          </a>
+
+          <a href="/learn/" class="nav-icon" aria-label="Learn">
+            <img src="/assets/images/learn.png" alt="Learn" />
+          </a>
+
+          <a href="/one-on-one/" class="nav-icon" aria-label="One-on-One">
+            <img src="/assets/images/1on1.png" alt="One-on-One" />
+          </a>
+
+          <a href="/about/" class="nav-icon" aria-label="About">
+            <img src="/assets/images/about.png" alt="About" />
+          </a>
+
+          <a href="/contact/" class="nav-icon" aria-label="Contact">
+            <img src="/assets/images/contact.png" alt="Contact" />
+          </a>
+        </div>
+
+        <!-- Search SECOND -->
+        <div class="nav-right">
+          <form class="site-search" role="search">
+            <input type="text" id="search-input" placeholder="Search..." />
+          </form>
+        </div>
+
       </nav>
-
-      <!-- Search Bar -->
-      <form class="site-search" role="search" style="max-width: 220px;">
-        <input type="text" id="search-input" placeholder="Search..." />
-      </form>
     </div>
-  </div>
+  </header>
 
   <!-- Page Content -->
   <main class="site-main">
     <div class="intro-block">
-      <h1>A Practical Approach to Learning Bass and Guitar, Focused on Rhythm and Feel.</h1>
-      <p>
-        PowerChordTheory is set up to help people get moving without needing to sort through everything on their own first. The focus is on making the early stages of learning feel clearer, whether someone is just starting or coming back to an instrument after some time away.
-      </p>
-      <p>
-        Everything here is organized to help people get started, make sense of what they’re learning, and keep moving without getting overwhelmed. The navigation below can be used to explore practical guidance, core ideas, and optional support as it’s useful.
-      </p>
+  <h1>A Practical Approach to Learning Bass and Guitar, Focused on Rhythm and Feel.</h1>
+  <p>
+    PowerChordTheory is set up to help people get moving without needing to sort through everything on their own first. The focus is on making the early stages of learning feel clearer, whether someone is just starting or coming back to an instrument after some time away.
+<p>Everything here is organized to help people get started, make sense of what they’re learning, and keep moving without getting overwhelmed. The navigation below can be used to explore practical guidance, core ideas, and optional support as it’s useful.</p>
+  </p>
+</div>
+<div class="mid-icons">
+  <a href="/gear-guide/" title="Gear Guide"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
+  <a href="/learn/" title="Learn"><img src="/assets/images/learn.png" alt="Learn" /></a>
+  <a href="/about/" title="About"><img src="/assets/images/about.png" alt="About" /></a>
+  <a href="/one-on-one/" title="One-On-One"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
+</div>
+<div class="core-sections">
+  <h2>Core Sections</h2>
+  <div class="core-grid">
+    <div class="core-box">
+      <h3>Gear Guide</h3>
+      <p>Clear guidance on choosing instruments and essential gear. Focused on what matters early and what can wait.</p>
     </div>
+    <div class="core-box">
+      <h3>Learn</h3>
+      <p>Core concepts that support rhythm, harmony, and playing real music. Built around curated videos and simple explanations.</p>
+    </div>
+    <div class="core-box">
+      <h3>One-On-One</h3>
+      <p>Personal, one on one direct support for learning and gear decisions. Available for those who want extra guidance without pressure.</p>
+    </div>
+  </div>
+</div>
 
-    <div class="mid-icons">
-      <a href="/gear-guide/" title="Gear Guide"><img src="/assets/images/gear.png" alt="Gear Guide" /></a>
-      <a href="/learn/" title="Learn"><img src="/assets/images/learn.png" alt="Learn" /></a>
-      <a href="/about/" title="About"><img src="/assets/images/about.png" alt="About" /></a>
-      <a href="/one-on-one/" title="One-On-One"><img src="/assets/images/1on1.png" alt="One-On-One" /></a>
-    </div>
-
-    <div class="core-sections">
-      <h2>Core Sections</h2>
-      <div class="core-grid">
-        <div class="core-box">
-          <h3>Gear Guide</h3>
-          <p>Clear guidance on choosing instruments and essential gear. Focused on what matters early and what can wait.</p>
-        </div>
-        <div class="core-box">
-          <h3>Learn</h3>
-          <p>Core concepts that support rhythm, harmony, and playing real music. Built around curated videos and simple explanations.</p>
-        </div>
-        <div class="core-box">
-          <h3>One-On-One</h3>
-          <p>Personal, one on one direct support for learning and gear decisions. Available for those who want extra guidance without pressure.</p>
-        </div>
-      </div>
-    </div>
   </main>
 
   <!-- Footer -->
